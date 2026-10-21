@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slate &amp; Teal Design System — UI Kit &amp; Style Guide</title>
+<meta name="description" content="A small design system and style guide built with design tokens and reusable components in HTML and CSS.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <p class="eyebrow">Design System · UI Kit</p>
+    <h1>Slate &amp; Teal Design System</h1>
+    <p class="lede">A compact, systematic style guide for web interfaces — design tokens, a consistent component set, and clear interactive states, hand-built in semantic HTML and CSS.</p>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+
+    <!-- Intro -->
+    <section class="section" aria-labelledby="intro-heading">
+      <h2 id="intro-heading">About this system</h2>
+      <p class="section-intro">This system gives a product one visual language: a restrained slate foundation, a single teal accent family, a 4-point spacing scale, and components that behave the same way everywhere they appear. Every value on this page comes from a CSS custom property (a design token), so changing a token updates the whole system at once — the same discipline used when building a component library in Sketch or Webflow, expressed here directly in code.</p>
+      <p class="section-intro">Principles: consistency over decoration, contrast-safe color pairings, visible focus states, and components documented with their states — not just their happiest appearance.</p>
+    </section>
+
+    <!-- Color -->
+    <section class="section" aria-labelledby="color-heading">
+      <h2 id="color-heading">Color palette</h2>
+      <p class="section-intro">Slate carries structure and text; teal is reserved for interactive elements and emphasis. Click any swatch to copy its hex code.</p>
+
+      <h3>Slate scale</h3>
+      <div class="swatch-grid" role="list" aria-label="Slate color scale">
+        <button class="swatch" type="button" data-hex="#f8fafc" role="listitem"><span class="swatch-color" style="background:#f8fafc"></span><span class="swatch-meta"><span class="swatch-name">Slate 50</span><span class="swatch-hex">#f8fafc</span></span></button>
+        <button class="swatch" type="button" data-hex="#f1f5f9" role="listitem"><span class="swatch-color" style="background:#f1f5f9"></span><span class="swatch-meta"><span class="swatch-name">Slate 100</span><span class="swatch-hex">#f1f5f9</span></span></button>
+        <button class="swatch" type="button" data-hex="#e2e8f0" role="listitem"><span class="swatch-color" style="background:#e2e8f0"></span><span class="swatch-meta"><span class="swatch-name">Slate 200</span><span class="swatch-hex">#e2e8f0</span></span></button>
+        <button class="swatch" type="button" data-hex="#cbd5e1" role="listitem"><span class="swatch-color" style="background:#cbd5e1"></span><span class="swatch-meta"><span class="swatch-name">Slate 300</span><span class="swatch-hex">#cbd5e1</span></span></button>
+        <button class="swatch" type="button" data-hex="#94a3b8" role="listitem"><span class="swatch-color" style="background:#94a3b8"></span><span class="swatch-meta"><span class="swatch-name">Slate 400</span><span class="swatch-hex">#94a3b8</span></span></button>
+        <button class="swatch" type="button" data-hex="#64748b" role="listitem"><span class="swatch-color" style="background:#64748b"></span><span class="swatch-meta"><span class="swatch-name">Slate 500</span><span class="swatch-hex">#64748b</span></span></button>
+        <button class="swatch" type="button" data-hex="#475569" role="listitem"><span class="swatch-color" style="background:#475569"></span><span class="swatch-meta"><span class="swatch-name">Slate 600</span><span class="swatch-hex">#475569</span></span></button>
+        <button class="swatch" type="button" data-hex="#334155" role="listitem"><span class="swatch-color" style="background:#334155"></span><span class="swatch-meta"><span class="swatch-name">Slate 700</span><span class="swatch-hex">#334155</span></span></button>
+        <button class="swatch" type="button" data-hex="#1e293b" role="listitem"><span class="swatch-color" style="background:#1e293b"></span><span class="swatch-meta"><span class="swatch-name">Slate 800</span><span class="swatch-hex">#1e293b</span></span></button>
+        <button class="swatch" type="button" data-hex="#0f172a" role="listitem"><span class="swatch-color" style="background:#0f172a"></span><span class="swatch-meta"><span class="swatch-name">Slate 900</span><span class="swatch-hex">#0f172a</span></span></button>
+      </div>
+
+      <h3 style="margin-top:2rem;">Teal accent family</h3>
+      <div class="swatch-grid" role="list" aria-label="Teal accent color scale">
+        <button class="swatch" type="button" data-hex="#f0fdfa" role="listitem"><span class="swatch-color" style="background:#f0fdfa"></span><span class="swatch-meta"><span class="swatch-name">Teal 50</span><span class="swatch-hex">#f0fdfa</span></span></button>
+        <button class="swatch" type="button" data-hex="#ccfbf1" role="listitem"><span class="swatch-color" style="background:#ccfbf1"></span><span class="swatch-meta"><span class="swatch-name">Teal 100</span><span class="swatch-hex">#ccfbf1</span></span></button>
+        <button class="swatch" type="button" data-hex="#99f6e4" role="listitem"><span class="swatch-color" style="background:#99f6e4"></span><span class="swatch-meta"><span class="swatch-name">Teal 200</span><span class="swatch-hex">#99f6e4</span></span></button>
+        <button class="swatch" type="button" data-hex="#5eead4" role="listitem"><span class="swatch-color" style="background:#5eead4"></span><span class="swatch-meta"><span class="swatch-name">Teal 300</span><span class="swatch-hex">#5eead4</span></span></button>
+        <button class="swatch" type="button" data-hex="#2dd4bf" role="listitem"><span class="swatch-color" style="background:#2dd4bf"></span><span class="swatch-meta"><span class="swatch-name">Teal 400</span><span class="swatch-hex">#2dd4bf</span></span></button>
+        <button class="swatch" type="button" data-hex="#14b8a6" role="listitem"><span class="swatch-color" style="background:#14b8a6"></span><span class="swatch-meta"><span class="swatch-name">Teal 500</span><span class="swatch-hex">#14b8a6</span></span></button>
+        <button class="swatch" type="button" data-hex="#0d9488" role="listitem"><span class="swatch-color" style="background:#0d9488"></span><span class="swatch-meta"><span class="swatch-name">Teal 600</span><span class="swatch-hex">#0d9488</span></span></button>
+        <button class="swatch" type="button" data-hex="#0f766e" role="listitem"><span class="swatch-color" style="background:#0f766e"></span><span class="swatch-meta"><span class="swatch-name">Teal 700 · Primary</span><span class="swatch-hex">#0f766e</span></span></button>
+        <button class="swatch" type="button" data-hex="#115e59" role="listitem"><span class="swatch-color" style="background:#115e59"></span><span class="swatch-meta"><span class="swatch-name">Teal 800</span><span class="swatch-hex">#115e59</span></span></button>
+        <button class="swatch" type="button" data-hex="#134e4a" role="listitem"><span class="swatch-color" style="background:#134e4a"></span><span class="swatch-meta"><span class="swatch-name">Teal 900</span><span class="swatch-hex">#134e4a</span></span></button>
+      </div>
+      <p class="copy-note" id="copy-note" aria-live="polite"></p>
+      <p class="section-intro">Contrast note: body text uses Slate 900 on white / Slate 50, muted text uses Slate 600, and primary buttons pair white text with Teal 700 — each pairing clears WCAG AA for its text size.</p>
+    </section>
+
+    <!-- Typography -->
+    <section class="section" aria-labelledby="type-heading">
+      <h2 id="type-heading">Typography</h2>
+      <p class="section-intro">A single system sans stack, sized on a clear scale. Headings use tight leading; body copy uses relaxed leading for readability.</p>
+      <div class="specimen"><span class="specimen-label">H1 · 2.25rem / 36px</span><h1 style="margin:0;">Design once, use everywhere</h1></div>
+      <div class="specimen"><span class="specimen-label">H2 · 1.875rem / 30px</span><h2 style="margin:0;">Design once, use everywhere</h2></div>
+      <div class="specimen"><span class="specimen-label">H3 · 1.5rem / 24px</span><h3 style="margin:0;">Design once, use everywhere</h3></div>
+      <div class="specimen"><span class="specimen-label">H4 · 1.25rem / 20px</span><h4 style="margin:0;">Design once, use everywhere</h4></div>
+      <div class="specimen"><span class="specimen-label">H5 · 1.125rem / 18px</span><h5 style="margin:0;">Design once, use everywhere</h5></div>
+      <div class="specimen"><span class="specimen-label">H6 · 1rem / 16px, uppercase</span><h6 style="margin:0;">Design once, use everywhere</h6></div>
+      <div class="specimen"><span class="specimen-label">Body · 1rem / 16px, line-height 1.6</span><p>Body copy is set at 16px so interfaces stay readable at arm's length and on small screens. Short paragraphs, plain language, and consistent spacing do more for clarity than decoration ever will.</p></div>
+      <div class="specimen"><span class="specimen-label">Caption · 0.75rem / 12px, Slate 600</span><p class="text-caption" style="margin:0;">Captions label figures, timestamps, and supporting metadata. Captions never carry essential information on their own.</p></div>
+    </section>
+
+    <!-- Spacing -->
+    <section class="section" aria-labelledby="spacing-heading">
+      <h2 id="spacing-heading">Spacing scale</h2>
+      <p class="section-intro">All spacing derives from a 4px base unit. If a gap is not on this scale, it does not ship.</p>
+      <div aria-label="Spacing scale visualization">
+        <div class="spacing-row"><span class="spacing-label">space-1 · 4px</span><span class="spacing-bar" style="width:0.25rem;"></span></div>
+        <div class="spacing-row"><span class="spacing-label">space-2 · 8px</span><span class="spacing-bar" style="width:0.5rem;"></span></div>
+        <div class="spacing-row"><span class="spacing-label">space-3 · 12px</span><span class="spacing-bar" style="width:0.75rem;"></span></div>
+        <div class="spacing-row"><span class="spacing-label">space-4 · 16px</span><span class="spacing-bar" style="width:1rem;"></span></div>
+        <div class="spacing-row"><span class="spacing-label">space-5 · 20px</span><span class="spacing-bar" style="width:1.25rem;"></span></div>
+        <div class="spacing-row"><span class="spacing-label">space-6 · 24px</span><span class="spacing-bar" style="width:1.5rem;"></span></div>
+        <div class="spacing-row"><span class="spacing-label">space-8 · 32px</span><span class="spacing-bar" style="width:2rem;"></span></div>
+        <div class="spacing-row"><span class="spacing-label">space-10 · 40px</span><span class="spacing-bar" style="width:2.5rem;"></span></div>
+        <div class="spacing-row"><span class="spacing-label">space-12 · 48px</span><span class="spacing-bar" style="width:3rem;"></span></div>
+        <div class="spacing-row"><span class="spacing-label">space-16 · 64px</span><span class="spacing-bar" style="width:4rem;"></span></div>
+      </div>
+    </section>
+
+    <!-- Buttons -->
+    <section class="section" aria-labelledby="buttons-heading">
+      <h2 id="buttons-heading">Buttons</h2>
+      <p class="section-intro">One primary action per view. Every button documents its default, hover, and disabled states.</p>
+      <div class="btn-row">
+        <button class="btn btn-primary" type="button">Primary</button>
+        <button class="btn btn-primary btn-hover-demo" type="button" aria-label="Primary button, hover state demonstration">Primary · hover</button>
+        <button class="btn btn-secondary" type="button">Secondary</button>
+        <button class="btn btn-outline" type="button">Outline</button>
+        <button class="btn" type="button" disabled>Disabled</button>
+      </div>
+      <p><span class="state-label">default</span> &nbsp;·&nbsp; <span class="state-label">hover (shown on the second primary button, and on hover of any button)</span> &nbsp;·&nbsp; <span class="state-label">disabled (not focusable, muted slate)</span> &nbsp;·&nbsp; <span class="state-label">focus-visible: 3px teal outline on all interactive elements</span></p>
+    </section>
+
+    <!-- Cards -->
+    <section class="section" aria-labelledby="cards-heading">
+      <h2 id="cards-heading">Cards</h2>
+      <p class="section-intro">Cards group one idea per surface: consistent padding, one border, one radius, one shadow level.</p>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Basic card</h3>
+          <p>A title, a short supporting paragraph, and a single clear action. The simplest container in the system.</p>
+          <button class="btn btn-outline" type="button">Learn more</button>
+        </article>
+        <article class="card">
+          <div class="card-image" role="img" aria-label="Image placeholder area">Image placeholder</div>
+          <h3>Card with image</h3>
+          <p>The media area is a CSS-only placeholder — no external images — sized to a consistent aspect across the grid.</p>
+          <button class="btn btn-outline" type="button">View item</button>
+        </article>
+        <article class="card" aria-label="Stat card example">
+          <p class="stat-value">1,248</p>
+          <p class="stat-label">Active users this week</p>
+          <p class="stat-delta">▲ 12% vs. last week</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Forms -->
+    <section class="section" aria-labelledby="forms-heading">
+      <h2 id="forms-heading">Form elements</h2>
+      <p class="section-intro">Labels are always visible, errors are described in text (never by color alone), and every control is keyboard reachable.</p>
+      <form class="form-grid" action="#" method="get">
+        <div class="field">
+          <label for="f-name">Full name</label>
+          <input type="text" id="f-name" name="name" autocomplete="name" placeholder="Jordan Lee">
+          <span class="hint">As it should appear on the account.</span>
+        </div>
+        <div class="field field-error">
+          <label for="f-email">Email address</label>
+          <input type="email" id="f-email" name="email" value="jordan@" aria-invalid="true" aria-describedby="email-error">
+          <span class="error-message" id="email-error">Enter a complete email address, including a domain such as example.com.</span>
+        </div>
+        <div class="field">
+          <label for="f-plan">Plan</label>
+          <select id="f-plan" name="plan">
+            <option>Starter</option><option selected>Growth</option><option>Scale</option>
+          </select>
+        </div>
+        <fieldset class="choice-group">
+          <legend>Notifications</legend>
+          <label class="choice"><input type="checkbox" checked> Product updates</label>
+          <label class="choice"><input type="checkbox"> Weekly summary</label>
+        </fieldset>
+        <fieldset class="choice-group">
+          <legend>Billing cycle</legend>
+          <label class="choice"><input type="radio" name="cycle" checked> Monthly</label>
+          <label class="choice"><input type="radio" name="cycle"> Yearly</label>
+        </fieldset>
+        <label class="toggle"><input type="checkbox" checked> Email notifications on</label>
+        <div class="field">
+          <label for="f-notes">Notes</label>
+          <textarea id="f-notes" name="notes" placeholder="Anything the team should know?"></textarea>
+        </div>
+        <div><button class="btn btn-primary" type="submit">Save changes</button></div>
+      </form>
+    </section>
+
+    <!-- Badges & Alerts -->
+    <section class="section" aria-labelledby="feedback-heading">
+      <h2 id="feedback-heading">Badges &amp; alerts</h2>
+      <p class="section-intro">Status is always paired with a word, not color alone, so meaning survives for every user.</p>
+      <p>
+        <span class="badge badge-success">Success</span>
+        <span class="badge badge-info">Info</span>
+        <span class="badge badge-warning">Warning</span>
+        <span class="badge badge-error">Error</span>
+        <span class="badge badge-neutral">Neutral</span>
+      </p>
+      <div class="alert alert-success" role="status"><strong>Success</strong>Your changes were saved.</div>
+      <div class="alert alert-info" role="status"><strong>Info</strong>A new version of this document is available.</div>
+      <div class="alert alert-warning" role="alert"><strong>Warning</strong>Your storage is at 85% of its limit.</div>
+      <div class="alert alert-error" role="alert"><strong>Error</strong>Payment failed. Check the card details and try again.</div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>Slate &amp; Teal Design System — an original portfolio concept by Brittany Nation. Built with semantic HTML, CSS design tokens, and a small amount of vanilla JavaScript.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
