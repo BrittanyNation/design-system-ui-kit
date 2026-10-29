@@ -114,6 +114,7 @@
         <button class="btn btn-outline" type="button">Outline</button>
         <button class="btn" type="button" disabled>Disabled</button>
       </div>
+      <p class="copy-note" id="demo-note" aria-live="polite"></p>
       <p><span class="state-label">default</span> &nbsp;·&nbsp; <span class="state-label">hover (shown on the second primary button, and on hover of any button)</span> &nbsp;·&nbsp; <span class="state-label">disabled (not focusable, muted slate)</span> &nbsp;·&nbsp; <span class="state-label">focus-visible: 3px teal outline on all interactive elements</span></p>
     </section>
 
@@ -178,6 +179,7 @@
           <textarea id="f-notes" name="notes" placeholder="Anything the team should know?"></textarea>
         </div>
         <div><button class="btn btn-primary" type="submit">Save changes</button></div>
+        <div class="alert alert-success" id="form-success" role="status" hidden><strong>Success</strong>Your changes were saved (demo form — nothing leaves the browser).</div>
       </form>
     </section>
 
