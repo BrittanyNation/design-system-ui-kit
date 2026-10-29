@@ -201,3 +201,7 @@ main .container { padding-top: var(--space-8); padding-bottom: var(--space-16); 
 .alert-info { background: var(--color-info-bg); color: #0c4a6e; border-color: var(--color-info); }
 .alert-warning { background: var(--color-warning-bg); color: #78350f; border-color: var(--color-warning); }
 .alert-error { background: var(--color-error-bg); color: #7f1d1d; border-color: var(--color-error); }
+
+/* Working-form additions */
+.error-message[hidden] { display: none; }
+.alert[hidden] { display: none; }
